@@ -25,25 +25,28 @@ public class _1503 {
 			int arr[][] = new int [n][n];
 			int a = 1;
 			//만약 n이 3일때 1 2 3 <-- 3은 [0][2] 의 값.
-			//            6 5 4 <-- 6은 [1][0] 의 값.
+			//            6 5 4 <-- 6은 [1][0] 의 값.  5는 [1][1] 4는 [1][2]
 			// 		      7 8 9 <-- 7은 [2][0] 의 값.
 			
-			for (int i = 0; i < arr.length; i++) {
-			
-				for (int j = 0; j < arr[i].length; j++) {
-		 if(i%2==0) {
+		for (int i = 0; i <n; i++) {
+			if(i%2==0) {
+		for (int j = 0; j < n; j++) {
 		
-		
-					arr[i][j] = a++;
-					System.out.print(arr[i][j]+ " ");
+					arr[i][j] = a++;	
 		 }
-
-			
+			}
+		 else {
+			 for (int j = n-1; j >= 0; j--) {
+			arr[i][j]=a++;
+		}
+		 }
+		}
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j <n; j++) {
+					System.out.print(arr[i][j]+ " ");
+				}
+				System.out.println();
+			}sc.close();
+		 }
 				
-			}System.out.println();
-			
 		}
-			
-			sc.close();
-		}
-}

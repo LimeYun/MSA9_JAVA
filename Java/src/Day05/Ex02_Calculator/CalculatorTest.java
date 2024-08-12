@@ -33,6 +33,7 @@ public class CalculatorTest {
 				System.out.println("x / y = " + result4);
 				System.out.printf("x / y = %5.2f \n", result4);
 				
+				
 		double result5 = calculator.remain(x, y);
 				System.out.println("x % y = " + result5);
 			//printf("포맷", 변수) : %X,Y (리터럴)

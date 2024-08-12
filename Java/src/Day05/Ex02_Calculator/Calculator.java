@@ -54,7 +54,7 @@ public class Calculator {
 	public double avg(int[] arr) {
 		double avg = 0.0; 
 		int sum = sum(arr);
-		avg = (double)sum/ arr.length;
+		avg = sum/ arr.length;
 		return avg;
 	}
 

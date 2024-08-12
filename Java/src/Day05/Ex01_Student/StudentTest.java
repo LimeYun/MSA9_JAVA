@@ -2,6 +2,7 @@ package Day05.Ex01_Student;
 
 public class StudentTest {
 	
+	
 	public static void main(String[] args) {
 		//Student 객체 생성
 		Student student = new Student();
