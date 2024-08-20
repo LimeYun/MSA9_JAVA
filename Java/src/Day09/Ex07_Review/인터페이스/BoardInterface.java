@@ -21,7 +21,7 @@ public interface BoardInterface {
 	Board read(int no);
 	
 	// 데이터 수정
-	int update(Board board);
+	int upDate(Board board);
 	
 	// 데이터 삭제
 	int delete(int no);
