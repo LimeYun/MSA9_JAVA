@@ -1,13 +1,15 @@
-package _1000_000;
+package _1000_200;
 
 import java.util.Scanner;
 
-public class _1018 {
-
+public class _1205 {
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		String code = sc.nextLine();
-		System.out.println(code);
+		
+		double a = sc.nextDouble();
+		double b = sc.nextDouble();
+		
+		
 	}
-	
 }

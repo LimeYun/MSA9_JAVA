@@ -3,18 +3,17 @@
 
 import java.util.Scanner;
 
-public class _1091 {
+public class _1093 {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		long a = sc.nextInt();
-		int m = sc.nextInt();
-		int d = sc.nextInt();
 		int n = sc.nextInt();
-		for (int i = 0; i < n-1; i++) {
-			a = a*m +d;
+		int count = sc.nextInt();
+		int num[] = new int[23];
+		for (int i = 0; i < num.length; i++) {
+			num[i]= i+1;
+			System.out.print(num[i] + " ");
 		}
-		System.out.println(a);
 	}
 }
 	
