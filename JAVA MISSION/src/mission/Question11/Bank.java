@@ -21,11 +21,10 @@ public class Bank {
 				case 1: 
 					System.out.println("입력>> 1");
 					System.out.print("계좌번호>> ");
-					String AccountNumber =sc.nextLine();
-					sc.nextLine();
+					String AccountNumber =sc.next();
 					account.setAccountNumber(AccountNumber);
 					System.out.print("예금주>> ");
-					String AccountName = sc.nextLine();
+					String AccountName = sc.next();
 					account.setAccountName(AccountName);
 					System.out.print("최초예금액>> ");
 					long Amount = sc.nextLong();
