@@ -5,9 +5,11 @@ import java.util.Scanner;
 public class Ex06_Grade {
 	
 	public static void main(String[] args) {
-		
+		// 학점을 입력받아, 점수 구간을 출력하시오.
+		// A : 90 ~ 100점 입니다.
 		Scanner sc = new Scanner(System.in);
 		System.out.print("학점 : ");
+		// String (문자열) 참조 자료형
 		String grade = sc.next();
 		// 문자 정수 문자열은 스위치 문의 조건값으로 가능
 		// float double 등 실수는 조건값으로 불가능

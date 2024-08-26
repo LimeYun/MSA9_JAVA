@@ -12,12 +12,16 @@ public class Ex09_WhileSum {
 		// sum = sum + a : ???
 		
 		while (a<=100) {
-			sum = sum + a;
-					a++;
+		// 방법 1
+		// sum = sum + a;
+		// a = a + 1;
+			
+		// 방법2
+		// sum = sum + a++;
 					
-		//방법2
-		//sum = sum + a++;
-		sum += a++;
+		// 방법3
+			sum += a++;
+		
 		}
 		System.out.println("합계: "+ sum);
 	}

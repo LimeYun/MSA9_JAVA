@@ -11,6 +11,9 @@ public class Ex03_Byte {
 		byte var3 = 0;
 		byte var4 = 30;
 		byte var5 = (byte)128;
+		// (에러)
+		// - 에러 메시지 : Type mis\match
+		// - > 자료형(타입이) 이 불일치, 데이터 범위로 벗어남(overflow)
 		// Type mismatch -> 자료형(타입)이 불일치, 데이터 범위 벗어남(overflow)
 		
 		

@@ -14,6 +14,7 @@ public class Ex02_Print {
 		System.out.println("안녕하세요 출력 후 줄바꿈");
 		System.out.println("자바 첫 수업");
 		System.out.println();
+		// 문자열 : "" 큰따옴표로 묶여있는 데이터
 		
 		
 	

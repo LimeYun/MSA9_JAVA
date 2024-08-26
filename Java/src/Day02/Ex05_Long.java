@@ -9,9 +9,10 @@ public class Ex05_Long {
 		long ln1 = 1000;
 		long ln2 = 2100000000;
 		long ln3 = 2200000000L;  
+		//long 타입 리터럴
 		//정수는 int로 인식하기 때문에 int의 범위를 벗어남. (long 타입 리터럴)
-		System.out.println("ln1:"+ln1);
-		System.out.println("ln2:"+ln2);
-		System.out.println("ln3:"+ln3);
+		System.out.println("ln1 : "+ ln1);
+		System.out.println("ln2 : "+ ln2);
+		System.out.println("ln3 : "+ ln3);
 	}
 }

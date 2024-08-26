@@ -25,6 +25,10 @@ public class Ex10_InputOperator {
 		System.out.println("합계 : "+ sum);
 		System.out.println("평균 : "+ avg);
 		
+		// (큰 자료형) + (작은 자료형) = (큰 자료형)
+		// - 서로 다른 자료형을 연산 시 결과는 큰 자료형으로 변환된다.
+		
+		// 강제 형 변환 : (자료형) 변수
 		double realAvg =(double) sum / 3;
 		double realAvg2 = sum / 3.0;
 		
@@ -32,8 +36,6 @@ public class Ex10_InputOperator {
 		System.out.println("실제 평균2:"+realAvg2);
 		
 		sc.close();
-		// (큰 자료형) + (작은 자료형) = (큰 자료형)
-		// - 서로 다른 자료형을 연산 시 결과는 큰 자료형으로 변환된다.
 		
 	}
 }

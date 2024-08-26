@@ -36,7 +36,7 @@ public class Ex13_LogicalOperator {
 		System.out.println(true || ++value2 > 10);
 		System.out.println("value2:"+value2);
 		
-		//비트 연산자의 경우 쇼트 서킷이 적용되지 안흔ㄴ다
+		//비트 연산자의 경우 쇼트 서킷이 적용되지 않는다
 		
 		int value3 =3;
 		System.out.println(false & ++value3 > 10);

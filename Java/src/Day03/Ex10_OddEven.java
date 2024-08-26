@@ -10,12 +10,14 @@ public class Ex10_OddEven {
 		int sum1 = 0;
 		int sum2 = 0;
 		
-		while (a<=19 && b<=20) {
-			sum1 = sum1 + a;
-			sum1+=a+2;
-			a=a+2;
-			sum2 = sum2 + b;
-			b=b+2;
+		while (a<=20) {
+			// 홀수
+			if (a%2 == 1)
+				sum1 += a;
+			// 짝수
+			if ( a%2 == 0)
+				sum2 =+ a;
+			a++;
 		}
 		
 		

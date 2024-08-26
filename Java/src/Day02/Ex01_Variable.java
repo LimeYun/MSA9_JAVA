@@ -30,8 +30,16 @@ public class Ex01_Variable {
 		//+	  : 연산자
 		System.out.println("x:"+x);
 		System.out.println("y:"+y);
+		// 합계
 		System.out.println("x+y="+(x+y));
+		// 평균 = (합계) / (개수)
+		System.out.println("x+y/2="+(x+y/2));
 		System.out.println("(x+y)/2="+((x+y)/2));
+		
+		// *우선순위에 따라서 알맞게 (  ) 지정해서 사용한다.
+		// 사칙 연산 우선순위
+		// *, / : 먼저
+		// +, - : 나중
 		
 	}
 }

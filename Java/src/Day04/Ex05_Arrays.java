@@ -31,7 +31,7 @@ public class Ex05_Arrays {
 		}
 		System.out.println();
 	}
-	String[]week = {"월",} ;
+	
 	//2차원 배열 선언 및 초기화
 	int arr2[][] = {{1,2,3}, {4,5,6}};
 	
