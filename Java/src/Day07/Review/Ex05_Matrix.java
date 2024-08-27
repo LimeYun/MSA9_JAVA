@@ -3,6 +3,7 @@ package Day07.Review;
 import java.util.Scanner;
 
 public class Ex05_Matrix {
+
 	
 	public static void main(String[] args) {
 		//양의 정수 M 과 N 을 입력받아 저장하고,
@@ -28,25 +29,27 @@ public class Ex05_Matrix {
 		//2차원배열은 이중반복문으로 접근한다.
 		//바깥쪽 반복문   	- 반복변수 i : 행 접근
 		//안 쪽 반복문   	- 반복변수 j : 열 접근
-		for (int i = 0; i < M; i++) {
-			for (int j = 0; j < N; j++) {
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
 				arr[i][j]=sc.nextInt();
 			}
 		}	
-			for (int i = 0; i < M; i++) {
-				for (int j = 0; j < N; j++) {
+			for (int i = 0; i < arr.length; i++) {
+				for (int j = 0; j < arr[i].length; j++) {
 					System.out.print(arr[i][j] + " ");
 				}
+				System.out.println();
+			}
 			System.out.println("----------------------");
 			
 			//foreach 으로 2차원 배열 출력
 			for (int[] row : arr) {
 				for (int col : row) {
-						System.out.println(col + " ");
+						System.out.print(col + " ");
 				}
 				System.out.println();
 			}
 		}
 	}
-	}
+
 

@@ -13,7 +13,7 @@ public class X {
 	//* 인스턴스 이너 클래스 안에서는 static 멤버 사용 불가
 	class Y{
 		int value;
-		static int value2;
+		static int value2 = 100;
 		
 		Y(){
 			System.out.println("X 의 Y 객체 생성");

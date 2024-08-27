@@ -2,8 +2,8 @@ package Day08.Ex01_AnonymousObject;
 
 public class AnonymousPerson {
  
-	//익명 자식객체 새엉
-	// - 부모클래스 객체명 \ new 부모클래스(){익명객체 정의}
+	//익명 자식객체 생성
+	// - 부모클래스 객체명 = new 부모클래스(){익명객체 정의}
 	Person person1 = new Person() {
 	
 	 @Override
@@ -22,6 +22,8 @@ public class AnonymousPerson {
 		 System.out.println();
 	}
 	
+	
+	};
 	void method() {
 		person1.name = "김조은";
 		person1.age = 20;
@@ -30,12 +32,6 @@ public class AnonymousPerson {
 		person2.name = "백종원";
 		person2.age = 40;
 		person2.work();
-		
-	}
-	
-	};
-	public void method() {
-		// TODO Auto-generated method stub
 		
 	}
 	

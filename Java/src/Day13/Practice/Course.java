@@ -70,6 +70,14 @@ public class Course <T> implements Manager {
 		}
 		System.out.println();
 	}
+	
+	/**
+	 *  수강생 추가
+	 *  @param t
+	 */
+	public void addStudent(T t) {
+		getStudents().add(t);
+	}
 
 	@Override
 	public String toString() {

@@ -1,4 +1,4 @@
-package DesignPattern.Builder;
+package Day08.DesignPattern.Builder;
 
 /**
  * 	빌더 패턴

@@ -1,5 +1,7 @@
 package Day07.Review;
 
+import java.util.Iterator;
+
 public class Ex04_Lotto {
 	public static void main(String[] args) {
 		// Math.random() : 0.xxxxx~ 0.9xxxx 사이의 난수를 반환하는 메소드
@@ -21,29 +23,37 @@ public class Ex04_Lotto {
 		//(공식) : (int)(Math.random() * [개수]) + [시작숫자]
 		
 		// 1~20 사이의 랜덤수
-		int twenty = (int)(Math.random() * 20) +1;
-		System.out.println("20 랜덤 : " + twenty);
+		System.out.println("(1~20");
+		System.out.println((int) (Math.random()* 20) + 1);
+//		int twenty = (int)(Math.random() * 20) +1;
+//		System.out.println("20 랜덤 : " + twenty);
+		
 		// -20~20 사이의 랜덤수
-		int minus = (int)(Math.random() * 41) -20;
-		System.out.println("+-20 랜덤 : " + minus);
+		System.out.println("(-20~20)");
+		System.out.println((int) (Math.random()* 41) -20);
+		
+//		int minus = (int)(Math.random() * 41) -20;
+//		System.out.println("+-20 랜덤 : " + minus);
 		
 		// 1~45 사이의 랜덤수
 		int arr[]= new int [6];
+		
 		for (int i = 0; i < arr.length; i++) {
-			int lotto = (int)(Math.random() * 45) +1;
-			arr[i]= lotto;
-			for(int j =i-1; j>=0 ; j--) {
-				if(arr[j]==lotto) {
+			arr[i] = (int)(Math.random() * 45) +1;
+			
+			for (int j = i-1; j >= 0; j--) {
+				if(arr[j] == arr[i]) {
 					i--;
 					break;
 				}
 			}
-			
-			for (int j : arr) {
-				System.out.print(i+ " ");
-			}
-				
 		}
+		
+		for (int i : arr) {
+			System.out.print(i + " ");
+		}
+		System.out.println();	
+				
 
 	}
 }
