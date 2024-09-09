@@ -1,18 +1,19 @@
+// - Book 클래스
 package mission.Question15;
 
 public class Book {
 	
-	private int isbn;
+	private String isbn;
 	private String title;
 	private String writer;
 	private String content;
 	private int price;
 	
 	public Book() {
-		this(0, "제목 없음", "작성자 없음", "내용 없음", 0);
+		this("-", "-", "-", "-", 0);
 	}
 
-	public Book(int isbn, String title, String writer, String content, int price) {
+	public Book(String isbn, String title, String writer, String content, int price) {
 		this.isbn = isbn;
 		this.title = title;
 		this.writer = writer;
@@ -20,11 +21,11 @@ public class Book {
 		this.price = price;
 	}
 
-	public int getIsbn() {
+	public String getIsbn() {
 		return isbn;
 	}
 
-	public void setIsbn(int isbn) {
+	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
 
@@ -62,9 +63,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Book [isbn=" + isbn + ", title=" + title + ", writer=" + writer + ", content=" + content + ", price="
-				+ price + "]";
+		return isbn + "\t|" + title + "\t|" + writer + "\t|" + content + "\t|" 
+				+ price;
 	}
-	
-	
 }
