@@ -9,7 +9,7 @@ package mission;
 //
 //제니 623843
 //지수 728394
-//리사 4329423
+//리사 432942
 //로제 942783
 //
 //성명 출장비 오만원 만원 오천원 천원 오백원 백원 오십원 십원 오원 일원
@@ -21,15 +21,57 @@ package mission;
 import java.util.Scanner;
 
 public class Question9_1 {
+	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String name = sc.nextLine();
-	while(true) {
-		if(name.equals("QUIT")) {
-			break;
-		}
 		
-	}
+		Scanner sc = new Scanner(System.in);
+	
+		int[] sum = new int[10]; //화폐단위 배열
+
+		
+        String[] name;
+        int[] price;
+
+        // 이름과 비용 입력
+        while (!name.equals("QUIT")) {
+            new String = sc.next(); 
+            price[] = sc.nextInt();
+            if (name.equals("QUIT"))
+                break;
+        }
+        System.out.println();
+
+        System.out.println("성명\t출장비\t오만원\t만원\t오천원\t천원\t오백원\t백원\t오십원\t십원\t오원\t일원");
+        for (int i = 0; i < 4; i++) {
+            int money = 50000;
+            System.out.print(name[i] + "\t" + price[i] + "\t");
+
+            for (int j = 0; j < 10; j++) {
+
+                int a = price[i] / money; // 갯수
+
+                int b[] = new int[10]; // 총합 배열
+                b[j] = a;
+
+                price[i] = price[i] % money; // 남은 금액
+
+                if (j % 2 == 0) {
+                    money = money / 5;
+                } else {
+                    money = money / 2;
+                }
+                System.out.print(a + "\t");
+
+                sum[j] += b[j]; // 총합 배열의 화폐단위 배열
+            }
+            System.out.println();
+        }
+        System.out.print("전체 화폐매수 : ");
+        for (int i = 0; i < sum.length; i++) {
+            System.out.print("\t"+sum[i]);
+        }
+
+        sc.close();
 	
 	}
 }

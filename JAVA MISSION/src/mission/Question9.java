@@ -24,10 +24,11 @@ public class Question9 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 	
+		int sum[] = new int[10]; //화폐단위 배열
 
+		
         String name[] = new String[4];
         int price[] = new int[4];
-        int sum[] = new int[10]; //화폐단위 배열
 
         // 이름과 비용 입력
         for (int i = 0; i < 4; i++) {

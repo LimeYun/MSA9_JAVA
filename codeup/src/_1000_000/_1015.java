@@ -9,7 +9,7 @@ public class _1015 {
 		Scanner sc = new Scanner(System.in);
 		float n = sc.nextFloat();
 		
-		System.out.println(Math.round(n*100)/100.0);
+		System.out.println(Math.round(n*100)/100.0f);
 	}
 	
 }

@@ -10,13 +10,18 @@ public class _1230 {
 		int b = sc.nextInt();
 		int c = sc.nextInt();
 		
-		while(true) {
-		if(a<=170 || b<= 170 || c<= 170) {
-			System.out.println("CRASH");
+		if (a<=170) {
+			System.out.println("CRASH " + a);
+			return;
 		}
-		else {
-			System.out.println("PASS");
+		if (b<=170) {
+			System.out.println("CRASH " + b);
+			return;
 		}
-	 }
+		if (c<=170) {
+			System.out.println("CRASH " + c);
+			return;
+		}
+		System.out.println("PASS");
    }
 }

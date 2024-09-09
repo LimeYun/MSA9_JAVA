@@ -1,10 +1,14 @@
 package _1000_100;
 
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class _1163 {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
+		System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8.name()));
 		Scanner sc = new Scanner(System.in);
 		int year = sc.nextInt();
 		int date = sc.nextInt();
